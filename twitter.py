@@ -83,6 +83,7 @@ def monitor(userId,csrf,cookie):
             tweet_text = ''
             tweet_favorite_count = ''
             tweet_retweet_count = ''
+            user_screen_name = ''
             if tweet_type == "TimelinePinEntry":  #有置顶推文
                 #获取简介描述
                 res= res["data"]["user"]["result"]["timeline_v2"]["timeline"]["instructions"][2]["entries"][0]["content"]["itemContent"]["tweet_results"]["result"]
